@@ -179,6 +179,30 @@ img {
     color: rgba(22, 22, 22, 0.8);
 }
 
+/* Footer */
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer h2{
+    padding-top: 130px;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.footer ul{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 50px 0;
+}
+.footer ul li{
+    font-weight: 500;
+}
+
 /* responsive design */
 
 @media screen and (max-width: 992px) {
@@ -211,6 +235,9 @@ img {
     .upcoming-match-right {
         grid-template-columns: repeat(2, 1fr);
     }
+    .footer ul{
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -232,6 +259,9 @@ img {
     }
     .upcoming-match-right{
         grid-template-columns: 1fr;
+    }
+    .footer ul{
+        flex-direction: column;
     }
     
 }
